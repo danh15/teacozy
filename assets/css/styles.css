@@ -40,7 +40,7 @@ h4 {
   font-size: 18px;
 }
 .mission {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-image: url("../images/img-mission-background.jpg");
   height: 700px;
   width: 1200px;
   justify-content: center;
