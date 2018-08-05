@@ -7,10 +7,10 @@ body, a {
 body, header, .mission-text, .location {
   background-color: black;
 }
-header, .content, .mission, .locations-section, .locations, .location {
+header, .content, #mission, #locations-section, .locations, .location {
   display: flex;
 }
-header, .content, .mission, .locations-section {
+header, .content, #mission, #locations-section {
   align-items: center;
 }
 header, .location {
@@ -38,7 +38,7 @@ header a {
   font-size: 22px;
   display: inline-block;
 }
-.content, .locations-section, .location {
+.content, #locations-section, .location {
   flex-direction: column;
 }
 .content {
@@ -51,21 +51,21 @@ h2 {
 h4 {
   font-size: 20px;
 }
-.mission {
+#mission {
   background-image: url("../images/img-mission-background.jpg");
   height: 700px;
 }
-.mission, .locations-section {
+#mission, #locations-section {
   width: 1200px;
 }
-.mission, .locations {
+#mission, .locations {
   justify-content: center;
 }
-.featured-tea {
+#featured-tea {
   width: 1000px;
 }
-.featured-tea, .locations-section {
-  margin-top: 50px;
+#featured-tea {
+  padding-top: 70px;
 }
 .tea, .tea img, .location {
   width: 300px;
@@ -79,11 +79,13 @@ h4 {
 .tea img, .contact {
   height: 200px;
 }
-.locations-section {
+#locations-section {
   background-image: url("../images/img-locations-background.jpg");
   height: 570px;
+  margin-top: 60px;
+  padding-top: 10px;
 }
-.locations-section h2 {
+#locations-section h2 {
   margin: 75px 0 0 0;
   padding-bottom: 0;
 }
