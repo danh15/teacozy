@@ -1,5 +1,6 @@
 body {
-  font-family: verdana;
+  font-family: helvetica;
+  opacity: .9;
 }
 body, a {
   color: white;
