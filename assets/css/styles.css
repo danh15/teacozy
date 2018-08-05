@@ -7,7 +7,7 @@ body, a {
 body, header, .mission-text, .location {
   background-color: black;
 }
-.flex {
+header, .content, .mission, .locations-section, .locations, .location {
   display: flex;
 }
 header, .content, .mission, .locations-section {
