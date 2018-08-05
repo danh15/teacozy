@@ -1,20 +1,30 @@
-body, header {
-  background-color: black;
-  color: white;
+body {
   font-family: verdana;
+}
+body, a {
+  color: white;
+}
+body, header, .mission-text, .location {
+  background-color: black;
 }
 .flex {
   display: flex;
 }
+header, .content, .mission, .locations-section {
+  align-items: center;
+}
+header, .location {
+  justify-content: space-between;  
+}
+header, .mission-text, .tea-selection, .locations {
+  width: 100%;
+}
 header {
   height: 69px;
   border-bottom: 1px solid seashell;
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  justify-content: space-between;
-  align-items: center;
 }
 header img {
   height: 50px;
@@ -24,16 +34,15 @@ nav {
   min-width: 410px;
 }
 header a {
-  color: white;
   margin-left: 20px;
   font-size: 22px;
   display: inline-block;
 }
-
+.content, .locations-section, .location {
+  flex-direction: column;
+}
 .content {
   margin-top: 70px;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 h2 {
@@ -45,22 +54,18 @@ h4 {
 .mission {
   background-image: url("../images/img-mission-background.jpg");
   height: 700px;
-  width: 1200px;
-  justify-content: center;
-  align-items: center;
 }
-.mission-text {
-  background-color: black;
-  width: 100%;
+.mission, .locations-section {
+  width: 1200px;
+}
+.mission, .locations {
+  justify-content: center;
 }
 .featured-tea {
   width: 1000px;
 }
 .featured-tea, .locations-section {
   margin-top: 50px;
-}
-.tea-selection {
-  width: 100%;
 }
 .tea, .tea img, .location {
   width: 300px;
@@ -71,32 +76,21 @@ h4 {
 .tea, .tea h4 {
   margin: 10px;
 }
-.tea img {
+.tea img, .contact {
   height: 200px;
 }
-
 .locations-section {
   background-image: url("../images/img-locations-background.jpg");
-  width: 1200px;
   height: 570px;
-  align-items: center;
-  flex-direction: column;
 }
 .locations-section h2 {
   margin: 75px 0 0 0;
   padding-bottom: 0;
 }
-.locations {
-  width: 100%;
-  justify-content: center;
-}
 .location {
   height: 250px;
   padding-bottom: 25px;
   margin: 15px 20px;
-  background-color: black;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .location h3 {
   font-size: 26px;
@@ -105,9 +99,6 @@ h4 {
 .location span {
   font-size: 20px;
   margin-bottom: 10px;
-}
-.contact {
-  height: 200px;
 }
 .contact h2 {
   margin: 10px;
