@@ -3,7 +3,7 @@ body {
   opacity: .9;
 }
 body, a {
-  color: white;
+  color: seashell;
 }
 body, header, .mission-text, .location {
   background-color: black;
@@ -15,7 +15,7 @@ header, .content, #mission, #locations-section {
   align-items: center;
 }
 header, .location {
-  justify-content: space-between;  
+  justify-content: space-between;
 }
 header, .mission-text, .tea-selection, .locations {
   width: 100%;
@@ -32,11 +32,13 @@ header img {
   margin: 0 100px 0 10px;
 }
 nav {
-  min-width: 410px;
+  min-width: 380px;
+}
+header a, h4, .location span {
+  font-size: 22px;
 }
 header a {
   margin-left: 20px;
-  font-size: 22px;
   display: inline-block;
 }
 .content, #locations-section, .location {
@@ -49,18 +51,22 @@ header a {
 h2 {
   font-size: 32px;
 }
-h4 {
-  font-size: 20px;
-}
 #mission {
   background-image: url("../images/img-mission-background.jpg");
-  height: 700px;
+  height: 760px;
 }
 #mission, #locations-section {
   width: 1200px;
 }
 #mission, .locations {
   justify-content: center;
+}
+.mission-text {
+  margin-top: 50px;
+}
+.mission-text h2, .mission-text h4 {
+  padding: 0;
+  margin: 15px;
 }
 #featured-tea {
   width: 1000px;
@@ -100,7 +106,6 @@ h4 {
   margin: 20px 0 0 0;
 }
 .location span {
-  font-size: 20px;
   margin-bottom: 10px;
 }
 .contact h2 {
